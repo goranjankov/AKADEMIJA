@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerija Slika</title>
+	<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery-heading {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 20px auto;
+    overflow-y: auto;
+}
+
+.gallery-item {
+    width: calc(20% - 20px);
+	background-color: #A7C7E7;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    display: block;
+}
+
+.caption {
+    padding: 10px;
+    background-color: #FFF;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .gallery-item {
+        width: calc(33.33% - 20px); 
+}
+
+
+@media screen and (max-width: 480px) {
+    .gallery-item {
+        width: calc(100% - 20px); 
+    }
+
+    .gallery {
+        flex-direction: column; 
+    }
+
+    .gallery-heading {
+        margin-top: 0; 
+    }
+}
+
+.lorem-text {
+    text-align: justify;
+    margin: 20px;
+}
+	</style>
+</head>
+<body>
+
+<h2 class="gallery-heading">Galerija slika</h2>
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="placeholder-image.png" alt="Thumb slika 1">
+            <div class="caption">
+                <h3>Naziv slike 1</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="placeholder-image.png" alt="Thumb slika 2">
+            <div class="caption">
+                <h3>Naziv slike 2</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="placeholder-image.png" alt="Thumb slika 3">
+            <div class="caption">
+                <h3>Naziv slike 3</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="placeholder-image.png" alt="Thumb slika 4">
+            <div class="caption">
+                <h3>Naziv slike 4</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="placeholder-image.png" alt="Thumb slika 5">
+            <div class="caption">
+                <h3>Naziv slike 5</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="placeholder-image.png" alt="Thumb slika 6">
+            <div class="caption">
+                <h3>Naziv slike 6</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="placeholder-image.png" alt="Thumb slika 7">
+            <div class="caption">
+                <h3>Naziv slike 7</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="placeholder-image.png" alt="Thumb slika 8">
+            <div class="caption">
+                <h3>Naziv slike 8</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="placeholder-image.png" alt="Thumb slika 9">
+            <div class="caption">
+                <h3>Naziv slike 9</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="placeholder-image.png" alt="Thumb slika 10">
+            <div class="caption">
+                <h3>Naziv slike 10</h3>
+            </div>
+        </div>
+
+    </div>
+ 
+ <p class="lorem-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut dui eu turpis tincidunt feugiat vel in justo.
+        Curabitur hendrerit tincidunt felis, at vestibulum lorem euismod sit amet. Nullam congue velit non purus rhoncus,
+        at sollicitudin tortor iaculis. Fusce euismod, dui a facilisis dignissim, elit risus eleifend justo, a vulputate
+        nisl purus at nisl. Aliquam pulvinar, mi eu bibendum posuere, metus elit facilisis ex, in scelerisque justo
+        magna sit amet dui.
+    </p>
+
+</body>
+</html>
